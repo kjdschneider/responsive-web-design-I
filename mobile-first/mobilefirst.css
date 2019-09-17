@@ -67,7 +67,8 @@ h1, h2, h3, h4, h5 {
 
 
 
-
+/* Mobile base css */
+/* mobileindex.html */
 
 .top {
 	width: 100%;
@@ -189,7 +190,93 @@ footer {
 }
 
 
+
+/* mobileservices.html */
+.lowerServices {
+	margin-top: 40px;
+	display: flex;
+	flex-flow: row-reverse wrap-reverse;
+	justify-content: center;
+}
+
+#contain {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#contain img {
+	width: 95%;
+	margin: 30px 0px;
+}
+
+.h1andText {
+	width: 95%;
+}
+
+.mainServices {
+	width: 95%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: auto;
+}
+
+.box {
+	width: 95%;
+	border: 1px solid black;
+	padding: 3%;
+	margin: 30px 0px;
+	background: #f5f6f7
+  }
+
+  .box button {
+	  border: 1px solid black;
+	  background: white;
+	  margin: 15px 0px;
+	  width: 35%;
+	  height: 30px;
+	  font-size: 14px;
+  }
+
+  #servicesFoot {
+	  width: 95%;
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+  }
+
+  #someFacts {
+	  margin: 10px 0px;
+  }
+
+  #someFacts ul{ 
+	  margin: 15px;
+	  list-style-type: square;
+  }
+
+  #containFoot {
+	  width: 100%;
+  }
+
+  #containFoot img {
+	  width: 95%;
+  }
+
+  .copy {
+	  margin: auto;
+  }
+
+
+  /* mobileproduct.html */
+
+
+
+
 /* Tablet responsive design */
+/* mobileindex.html */
 @media (min-width: 500px){
 	nav a {
 		width: auto;
@@ -229,31 +316,93 @@ footer {
 		margin: 0px;
 	}
 
+/* mobileservices.html */
+	.lowerServices {
+		margin-bottom: 50px;
+	}
+	
+	.mainServices {
+		width: 95%;
+		margin: auto;
+		justify-content: space-between
+	}
+	
+	.box {
+		width: 45%;
+	}
 
-	/* Desktop responsive design */
-	@media (min-width: 800px){
-		.top a img {
-			width: 250px;
-			margin-bottom: 0px;
-		}
-		
-		nav a {
-			font-size: 20px;
-		}
-		
-		.lower {
-			justify-content: space-evenly;
-			align-items: center;
-		}
-		
-		.lower img{
-			display: block;
-		}
+	#servicesFoot{
+		flex-wrap: wrap;
+		margin-top: 50px;
+	}
 
-		footer {
-			width: 94%;
-			margin: 0 auto;
-			margin-top: 30px;
-		}
+	#someFacts {
+		width: 45%;
+	}
+
+	#containFoot {
+		width: 45%;
+	}
+}
+
+/* Desktop responsive design */
+/* mobileindex.html */
+@media (min-width: 800px){
+	.top a img {
+		width: 250px;
+		margin-bottom: 0px;
+	}
+	
+	nav a {
+		font-size: 17px;
+	}
+		
+	.lower {
+		justify-content: space-evenly;
+		align-items: center;
+	}
+		
+	.lower img{
+		display: block;
+	}
+
+	footer {
+		width: 94%;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+
+/* mobileservices.html */
+	.lowerServices{
+		flex-flow: row wrap;
+	}
+
+	#contain img {
+		margin: 0px;
+	}
+
+	.h1andText {
+		margin-top: 70px;
+	}
+
+	.h1andText h1 {
+		font-size: 32px;
+	}
+
+	.box {
+		width: 32%;
+	}
+
+	#someFacts {
+		line-height: 1.4;
+	}
+
+	#someFacts h3 {
+		font-size: 24px;
+	}
+
+	#someFacts ul {
+		margin: 30px;
 	}
 }
